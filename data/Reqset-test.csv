@@ -1,0 +1,30 @@
+﻿Id,App,Requirement
+1,Alarm,"When user starts the app, a page should be displayed showing all the configured alarms"
+2,Alarm,"Each alarm should contain the following information: the time in big font, under that the name of the alarm in bold small font, and under that the frequency in small fonts"
+3,Alarm,Each alarm should also have a toggle button to turn it on or off
+4,Alarm,"When the toggle button is off, the alarm name should be in black color but when if the on, the alarm name should be shown in blue color"
+5,Alarm,"When user clicks on an alarm, he should be taken to a page to configure the alarm"
+6,Alarm,"On the configure alarm page, at the top, there should be text showing ""EDIT ALARM"" in bold font, under that they should be time control to allow user the set hour, minute, and AM/PM, under that there the be text for ""Alaram Name"" and under that the current name of the alarm should be shown. Under that there should be text for ""Repeats"" and under that the current frequency of the alarm should be shown. Under that there should be tet for ""Sound"" and under that the selected sound should be shown. Under that there should be text for ""Snooze time"" and under that the current snooze time should be shown"
+7,Alarm,"When user clicks on each alarm alarm name it should be change to an editable text and user should be able the type the new value. If user clicks on frquency a list of days of the week should be shown each having a check box to its left. If user select all the check boxes, frequnecy should be displayed as ""Every day"". If user checks every day except Saturday and Sunday, the frequency should ""Weekdays"". "
+8,Alarm,Wlen user clicks on the sound a list of all available sounds should shown so that user can select one of them. Each sound should have a play button to its left and when click should play that sound
+9,Alarm,"When use clicks on snooze time a list with the following values should shown ""Disabled"", ""5 minutes"", ""10 minutes"", ""20 minutes"", ""30 minutes"", and ""1 hour"". User can select one of these values"
+10,Alarm,"There should be three buttons on the bottom left corner of the page: ""Floppy Disk Icon"" to save the changes, ""Trashcan Icon"" to delete the alarm, and ""x"" to cancel the changes. When any of this buttons are click the appropriate action should takes place and user should be returned to the pevious page"
+11,Alarm,"The alarm app should run in the background and when the current time matches any of the on alarms, its corresponding sound should play"
+12,Alarm,"When the alarms goes off, user should see a pop up window with two options on it: ""Stop"" and ""Snooze"". Stop will stop the alarm and snooze will temporarily pauses the alarm and it will goes off again after the specficed snoozed time"
+13,TimeCard,When launched ask the user to enter his login and password
+14,TimeCard,"Check the login and passowrd and If they match a non-admin account, show the following message: ""Work started at"" and the current time in front of it"
+15,TimeCard,If a matching account cannot be found show an error that no matching account was found. Ask the user to re-enter username and password
+16,TimeCard,"At any point, user can enter 'B' to take a break, 'R' to restart working, or ""X' to exit"
+17,TimeCard,"If user enters 'B' record the current time and show the following messge ""break started"" and show the current time in front of it"
+18,TimeCard,If user enters 'B' while already on break don't do anything
+19,TimeCard,"If user presses 'R' while on break, end the break and the following message ""Work started at"" and the current time in front of it"
+20,TimeCard,"If user presses 'R' while working, don't do anything"
+21,TimeCard,If user presses 'X' show the total time worked and exit the program
+22,TimeCard,While working show a message every 5 minutues showng the total time worked since start.
+23,TimeCard,"If the username and password match an admin account, show the following menu: 'T': Today's Report, 'Y': Yesterday's Report, 'U': User Report, 'X': Exit"
+24,TimeCard,if admin presses 'T' show a list including every user's name and total time worked today
+25,TimeCard,If admin presses 'Y' show a list including every user's name and total time worked yesterday
+26,TimeCard,If admin presses 'U' ask the admin to enter user's name
+27,TimeCard,"If a matching name is found, show a list for the last 30 days. For each day show the following information: start time, end time, number of breaks, and total time worked"
+28,TimeCard,"If a matching name cannot be found enter this message ""Cannot found a matching user"" and ask the admin to re-enter the name."
+29,TimeCard,If the admin pressses 'X' exit the app.
